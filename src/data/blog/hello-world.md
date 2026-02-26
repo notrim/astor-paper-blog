@@ -1,9 +1,12 @@
 ---
-title: "Hello World"
-description: "我的第一篇 Astro-Paper 博客"
-pubDate: 2026-02-26
-tags: ["astro", "blog"]
+title: 我的第一篇文章
+author: Eric
+pubDatetime: 2026-02-26
+featured: true
 draft: false
+tags:
+  - 随笔
+description: 这是我的第一篇 Astro Paper 博客
 ---
 
 这里开始写正文，支持 Markdown。
