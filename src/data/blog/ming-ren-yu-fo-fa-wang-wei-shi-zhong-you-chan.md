@@ -1,6 +1,6 @@
 ---
 title: 名人与佛法｜王维：诗中有禅，画中有净土
-pubDatetime: 2026-02-27T00:00:00Z
+pubDatetime: 2026-02-26T00:00:00Z
 featured: true
 draft: false
 tags:
