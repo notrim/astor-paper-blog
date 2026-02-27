@@ -5,6 +5,9 @@
   .app-prose {
     @apply prose;
 
+    /* Reading layout tuning (Modern Oriental) */
+    max-width: 720px;
+
     h1,
     h2,
     h3,
@@ -76,6 +79,17 @@
 
     blockquote {
       @apply border-s-accent/80 wrap-break-word opacity-80;
+    }
+
+    /* Comfortable paragraph breathing */
+    p {
+      margin: 1.2em 0;
+    }
+
+    /* Chapter rhythm for long-form reading */
+    h2 {
+      margin-top: 2.2em;
+      margin-bottom: 0.8em;
     }
 
     details {

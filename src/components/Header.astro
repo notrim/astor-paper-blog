@@ -6,7 +6,7 @@ import IconArchive from "@/assets/icons/IconArchive.svg";
 import IconSunHigh from "@/assets/icons/IconSunHigh.svg";
 import IconMenuDeep from "@/assets/icons/IconMenuDeep.svg";
 import LinkButton from "./LinkButton.astro";
-import { SITE } from "@/config";
+import { NAV_LINKS, SITE } from "@/config";
 
 const { pathname } = Astro.url;
 
@@ -15,10 +15,13 @@ const currentPath =
   pathname.endsWith("/") && pathname !== "/" ? pathname.slice(0, -1) : pathname;
 
 const isActive = (path: string) => {
-  const currentPathArray = currentPath.split("/").filter(p => p.trim());
-  const pathArray = path.split("/").filter(p => p.trim());
+  return currentPath === path;
+};
 
-  return currentPath === path || currentPathArray[0] === pathArray[0];
+const isTagLinkActive = (href: string) => {
+  // Tag pages could be `/tags/<tag>` or paginated `/tags/<tag>/<page>`
+  if (!href.startsWith("/tags/")) return false;
+  return currentPath === href || currentPath.startsWith(`${href}/`);
 };
 ---
 
@@ -65,30 +68,34 @@ const isActive = (path: string) => {
       <ul
         id="menu-items"
         class:list={[
-          "mt-4 grid w-44 grid-cols-2 place-content-center gap-2",
-          "[&>li>a]:block [&>li>a]:px-4 [&>li>a]:py-3 [&>li>a]:text-center [&>li>a]:font-medium [&>li>a]:hover:text-accent sm:[&>li>a]:px-2 sm:[&>li>a]:py-1",
+          "mt-4 grid w-full max-w-xs grid-cols-1 place-content-center gap-2",
+          "[&>li>a]:block [&>li>a]:px-4 [&>li>a]:py-3 [&>li>a]:text-center [&>li>a]:font-medium [&>li>a]:whitespace-nowrap [&>li>a]:hover:text-accent sm:[&>li>a]:px-2 sm:[&>li>a]:py-1",
           "hidden",
           "sm:mt-0 sm:flex sm:w-auto sm:gap-x-5 sm:gap-y-0",
         ]}
       >
-        <li class="col-span-2">
-          <a href="/posts" class:list={{ "active-nav": isActive("/posts") }}>
-            Posts
-          </a>
-        </li>
-        <li class="col-span-2">
-          <a href="/tags" class:list={{ "active-nav": isActive("/tags") }}>
-            Tags
-          </a>
-        </li>
-        <li class="col-span-2">
+        {
+          NAV_LINKS.map(link => (
+            <li>
+              <a
+                href={link.href}
+                class:list={{
+                  "active-nav": isTagLinkActive(link.href) || isActive(link.href),
+                }}
+              >
+                {link.title}
+              </a>
+            </li>
+          ))
+        }
+        <li>
           <a href="/about" class:list={{ "active-nav": isActive("/about") }}>
-            About
+            关于
           </a>
         </li>
         {
           SITE.showArchives && (
-            <li class="col-span-2">
+            <li>
               <LinkButton
                 href="/archives"
                 class:list={[
@@ -106,7 +113,7 @@ const isActive = (path: string) => {
             </li>
           )
         }
-        <li class="col-span-1 flex items-center justify-center">
+        <li class="flex items-center justify-center">
           <LinkButton
             href="/search"
             class:list={[
@@ -122,7 +129,7 @@ const isActive = (path: string) => {
         </li>
         {
           SITE.lightAndDarkMode && (
-            <li class="col-span-1 flex items-center justify-center">
+            <li class="flex items-center justify-center">
               <button
                 id="theme-btn"
                 class="focus-outline relative size-12 p-4 sm:size-8 hover:[&>svg]:stroke-accent"

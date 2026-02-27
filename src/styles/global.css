@@ -5,19 +5,40 @@
 
 :root,
 html[data-theme="light"] {
-  --background: #fdfdfd;
-  --foreground: #282728;
-  --accent: #006cac;
-  --muted: #e6e6e6;
-  --border: #ece9e9;
+  /* Modern Oriental palette (light) */
+  --text-main: #2b2b2b;
+  --text-secondary: #6b6b6b;
+  --bg-main: #faf9f7;
+  --bg-card: #ffffff;
+
+  /* Accent (base) + hover (黛青) */
+  --accent: #6e8b74;
+  --accent-hover: #2f5d50;
+
+  /* Backward-compatible tokens used by Tailwind theme mapping */
+  --background: var(--bg-main);
+  --foreground: var(--text-main);
+
+  /* Warm neutrals (avoid pure black/white harshness) */
+  --muted: #e7e1d8;
+  --border: #e3ddd5;
 }
 
 html[data-theme="dark"] {
-  --background: #212737;
-  --foreground: #eaedf3;
-  --accent: #ff6b01;
-  --muted: #343f60;
-  --border: #ab4b08;
+  /* Modern Oriental palette (dark) */
+  --text-main: #e9e6df;
+  --text-secondary: #bdb7ad;
+  --bg-main: #121411;
+  --bg-card: #171a16;
+
+  --accent: #8faf97;
+  --accent-hover: #a7c5b0;
+
+  --background: var(--bg-main);
+  --foreground: var(--text-main);
+
+  --muted: #2a2f2a;
+  --border: #3a423a;
 }
 
 @theme inline {
@@ -40,8 +61,17 @@ html[data-theme="dark"] {
   }
   body {
     @apply flex min-h-svh flex-col bg-background font-app text-foreground selection:bg-accent/75 selection:text-background;
+    font-family: "LXGW WenKai", "Noto Serif SC", serif;
+    line-height: 1.9;
+    letter-spacing: 0.02em;
   }
-  a,
+  a {
+    color: var(--accent);
+    @apply outline-offset-1 outline-accent focus-visible:no-underline focus-visible:outline-2 focus-visible:outline-dashed;
+  }
+  a:hover {
+    color: var(--accent-hover);
+  }
   button {
     @apply outline-offset-1 outline-accent focus-visible:no-underline focus-visible:outline-2 focus-visible:outline-dashed;
   }
