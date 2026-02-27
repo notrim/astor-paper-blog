@@ -92,27 +92,28 @@ To avoid color flickering on page reload, we have to place the theme initializat
 Both light & dark color schemes of AstroPaper theme can be customized in the `global.css` file.
 
 ```css file="src/styles/global.css"
-@import "tailwindcss";
+@import "../../../node_modules/tailwindcss/dist/lib.d.mts";
 @import "./typography.css";
 
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 :root,
 html[data-theme="light"] {
-  --background: #fdfdfd;
-  --foreground: #282728;
-  --accent: #006cac;
-  --muted: #e6e6e6;
-  --border: #ece9e9;
+    --background: #fdfdfd;
+    --foreground: #282728;
+    --accent: #006cac;
+    --muted: #e6e6e6;
+    --border: #ece9e9;
 }
 
 html[data-theme="dark"] {
-  --background: #212737;
-  --foreground: #eaedf3;
-  --accent: #ff6b01;
-  --muted: #343f60bf;
-  --border: #ab4b08;
+    --background: #212737;
+    --foreground: #eaedf3;
+    --accent: #ff6b01;
+    --muted: #343f60bf;
+    --border: #ab4b08;
 }
+
 /* ... */
 ```
 

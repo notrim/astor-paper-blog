@@ -1,37 +1,42 @@
 ---
 layout: ../layouts/AboutLayout.astro
-title: "About"
+title: "关于"
 ---
 
-AstroPaper is a minimal, accessible and SEO-friendly blog theme built with [Astro](https://astro.build/) and [Tailwind CSS](https://tailwindcss.com/).
+在纷扰的日常里，愿我们都能留一处安静。
 
-![Astro Paper](public/astropaper-og.jpg)
+这里记录我对佛法的学习与体会，也记录生活中那些需要被温柔照见的时刻：起心动念、情绪来去、关系里的执著与放下。
 
-AstroPaper provides a solid foundation for blogs, or even portfolios\_ with full markdown support, built-in dark mode, and a clean layout that works out-of-the-box.
+愿做一个长期学习的人：**以经论为依，以生活为证**。
 
-The blog posts in this theme also serve as guides, docs or example articles\_ making AstroPaper a flexible starting point for your next content-driven site.
+## 这个站点写什么
 
-## Features
+你可以从以下几条线索进入：
 
-AstroPaper comes with a set of useful features that make content publishing easy and effective:
+- **《心经解读》**：以短文方式拆解关键句，回到“照见五蕴皆空”的当下练习  
+  `/tags/心经解读`
+- **佛学随笔**：把佛法的观照放回日常（工作、关系、选择、无常）  
+  `/tags/佛学随笔`
+- **禅修笔记**：以更偏实修的角度记录坐禅、止观、身心调伏的方法  
+  `/tags/禅修笔记`
+- **情绪词典**：用慈悲与觉知整理情绪（焦虑、委屈、愤怒、依恋……）  
+  `/tags/情绪词典`
 
-- SEO-friendly
-- Fast performance
-- Light & dark mode
-- Highly customizable
-- Organizable blog posts
-- Responsive & accessible
-- Static search with [PageFind](https://pagefind.app/)
-- Automatic social image generation
+## 写作与引用原则
 
-and so much more.
+- **尊重原典**：涉及经文、祖师语录会尽量标明出处；若有不当之处，欢迎指正。
+- **不求立论**：文字以自省与实践为主，不以争辩为能事。
+- **重在可行**：尽量把“观照”落到可练习的方式：一段呼吸、一句提醒、一次回看。
 
-## Show your support
+## 版权与转载
 
-If you like [AstroPaper](https://github.com/satnaing/astro-paper), consider giving it a star ⭐️.
+除特别说明外，本站内容默认采用“允许转载但请注明出处与链接”的方式；若你希望全文转载或用于商业用途，请先联系我确认。
 
-Found a bug 🐛 or have an improvement ✨ in mind? Feel free to open an [issue](https://github.com/satnaing/astro-paper/issues), submit a [pull request](https://github.com/satnaing/astro-paper/pulls) or start a [discussion](https://github.com/satnaing/astro-paper/discussions).
+## 交流
 
-If you find this theme helpful, you can also [sponsor me on GitHub](https://github.com/sponsors/satnaing) or [buy me a coffee](https://buymeacoffee.com/satnaing) to show your support — every penny counts.
+如果你也在学习与实践的路上，欢迎交流：
 
-Kyay zuu! 🙏🏼
+- 你可以在文章页留言
+- 或通过邮件联系我（请把下面地址替换成你的）：`qcshu001@gmail.com`
+
+愿你我在寻常日子里，慢慢醒来。
