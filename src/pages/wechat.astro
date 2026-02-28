@@ -1,0 +1,38 @@
+---
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import Breadcrumb from "@/components/Breadcrumb.astro";
+import Layout from "@/layouts/Layout.astro";
+import { SITE } from "@/config";
+
+const pageTitle = "微信公众号：慧灯禅语";
+---
+
+<Layout title={`${pageTitle} | ${SITE.title}`}>
+  <Header />
+  <Breadcrumb />
+
+  <main id="main-content" class="app-layout">
+    <section class="app-prose mb-28 max-w-app">
+      <h1 class="text-2xl tracking-wider sm:text-3xl">{pageTitle}</h1>
+      <p class="text-text-secondary">扫码关注，愿你在寻常日子里，慢慢安住。</p>
+
+      <figure class="not-prose mt-6">
+        <img
+          src="/images/wechat-qrcode.jpg"
+          alt="微信公众号：慧灯禅语 - 二维码"
+          loading="lazy"
+          class="mx-auto w-full max-w-sm rounded-xl border border-border bg-card p-2"
+        />
+        <figcaption class="mt-3 text-center text-sm text-text-secondary">微信扫一扫关注「慧灯禅语」</figcaption>
+      </figure>
+
+      <p class="mt-8 text-text-secondary">
+        若你希望邮件交流，也可以写信至：
+        <a href="mailto:qcshu001@gmail.com">qcshu001@gmail.com</a>
+      </p>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
