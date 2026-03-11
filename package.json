@@ -4,7 +4,7 @@
   "version": "5.5.1",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro check && astro build && pagefind --site dist && cp -r dist/pagefind public/",
+    "build": "astro check && astro build && pagefind --site dist && node -e \"const fs=require('fs'); const path=require('path'); const src=path.join('dist','pagefind'); const dst=path.join('public','pagefind'); if (fs.existsSync(src)) fs.cpSync(src,dst,{recursive:true,force:true});\"",
     "preview": "astro preview",
     "sync": "astro sync",
     "astro": "astro",
@@ -20,6 +20,7 @@
     "astro": "^5.16.6",
     "dayjs": "^1.11.19",
     "lodash.kebabcase": "^4.1.1",
+    "lunar-typescript": "^1.8.6",
     "remark-collapse": "^0.1.2",
     "remark-toc": "^9.0.0",
     "satori": "^0.18.3",
