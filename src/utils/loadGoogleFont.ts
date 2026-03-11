@@ -44,7 +44,10 @@ async function loadLocalFallbackFont(): Promise<ArrayBuffer | null> {
       const woff2 = files.find(f => f.toLowerCase().endsWith(".woff2"));
       if (!woff2) continue;
       const buf = await readFile(path.join(dir, woff2));
-      return buf.buffer.slice(buf.byteOffset, buf.byteOffset + buf.byteLength);
+      // Ensure we always return a real ArrayBuffer (not SharedArrayBuffer in some runtimes).
+      const copy = new Uint8Array(buf.byteLength);
+      copy.set(buf);
+      return copy.buffer;
     } catch {
       // ignore and try next dir
     }
