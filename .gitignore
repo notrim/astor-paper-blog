@@ -13,6 +13,10 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
+# lockfiles (this repo uses pnpm-lock.yaml)
+package-lock.json
+yarn.lock
+
 # environment variables
 .env
 .env.production
