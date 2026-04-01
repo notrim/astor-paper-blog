@@ -30,3 +30,6 @@ yarn.lock
 # pagefind
 
 public/pagefind
+
+# npm cache directory
+npm-cache/
