@@ -9,6 +9,7 @@ import EditPost from "@/components/EditPost.astro";
 import ShareLinks from "@/components/ShareLinks.astro";
 import BackButton from "@/components/BackButton.astro";
 import BackToTopButton from "@/components/BackToTopButton.astro";
+import AudioPlayer from "@/components/AudioPlayer.astro";
 import { getPath } from "@/utils/getPath";
 import { slugifyStr } from "@/utils/slugify";
 import IconChevronLeft from "@/assets/icons/IconChevronLeft.svg";
@@ -33,6 +34,7 @@ const {
   timezone,
   tags,
   hideEditPost,
+  audio,
 } = post.data;
 
 const { Content } = await render(post);
@@ -107,6 +109,11 @@ const nextPost =
       >
       <EditPost {hideEditPost} {post} class="max-sm:hidden" />
     </div>
+    {audio && (
+      <div class="my-8">
+        <AudioPlayer audioSrc={audio} title={title} />
+      </div>
+    )}
     <article
       id="article"
       class="app-prose mt-8 w-full max-w-app prose-pre:bg-(--shiki-light-bg) dark:prose-pre:bg-(--shiki-dark-bg)"

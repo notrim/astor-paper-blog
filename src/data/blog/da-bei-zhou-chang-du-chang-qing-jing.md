@@ -7,6 +7,7 @@ draft: false
 tags:
   - 佛学随笔
 description: 《大悲咒》简介与咒文节选：在日常持诵中安神、增福、回归清净。
+audio: /audio/sample-audio.mp3
 ---
 
 ## 《大悲咒》简介

@@ -1,0 +1,37 @@
+---
+interface Props {
+  audioSrc: string;
+  title?: string;
+}
+
+const { audioSrc, title } = Astro.props;
+---
+
+<div class="audio-player w-full max-w-2xl rounded-lg bg-muted/50 p-4 shadow-sm">
+  <div class="mb-2 text-sm font-medium text-foreground">
+    {title || "音频播放"}
+  </div>
+  <audio
+    controls
+    class="w-full h-12"
+    src={audioSrc}
+    preload="metadata"
+  >
+    您的浏览器不支持音频播放。
+  </audio>
+  <div class="mt-2 text-xs text-muted-foreground">
+    点击播放按钮开始收听
+  </div>
+</div>
+
+<style scoped>
+audio {
+  accent-color: var(--accent);
+}
+
+@media (prefers-color-scheme: dark) {
+  audio {
+    filter: invert(1) hue-rotate(180deg);
+  }
+}
+</style>
