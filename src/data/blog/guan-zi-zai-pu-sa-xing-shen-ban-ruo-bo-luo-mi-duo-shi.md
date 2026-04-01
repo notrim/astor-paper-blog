@@ -5,11 +5,7 @@ pubDatetime: 2026-04-01T00:00:00Z
 featured: false
 draft: false
 tags:
-  - 佛学随笔
-  - 心经
-  - 修行
-  - 观自在
-  - 般若智慧
+  - 心经解读
 description: 解读《心经》开篇“观自在菩萨，行深般若波罗蜜多时”，探索观自在的真正含义和修行方法。
 ---
 
