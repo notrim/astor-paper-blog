@@ -1,103 +1,165 @@
-# AstroPaper 📄
+# 慧灯禅语博客 📄
 
 ![AstroPaper](public/astropaper-og.jpg)
 [![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)](https://www.figma.com/community/file/1356898632249991861)
 ![Typescript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![GitHub](https://img.shields.io/github/license/satnaing/astro-paper?color=%232F3741&style=for-the-badge)
-[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196?logo=conventionalcommits&logoColor=white&style=for-the-badge)](https://conventionalcommits.org)
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=for-the-badge)](http://commitizen.github.io/cz-cli/)
 
-AstroPaper is a minimal, responsive, accessible and SEO-friendly Astro blog theme. This theme is designed and crafted based on [my personal blog](https://satnaing.dev/blog).
+这是一个基于 Astro 框架和 AstroPaper 主题的博客项目，专注于分享佛学相关内容。
 
-Read [the blog posts](https://astro-paper.pages.dev/posts/) or check [the README Documentation Section](#-documentation) for more info.
+## 🔥 特性
 
-## 🔥 Features
+- [x] 类型安全的 Markdown
+- [x] 超高性能
+- [x] 可访问性（键盘/屏幕阅读器）
+- [x] 响应式设计（移动设备 ~ 桌面端）
+- [x] SEO 友好
+- [x] 明暗模式
+- [x] 模糊搜索
+- [x] 草稿文章和分页
+- [x] 站点地图和 RSS 订阅
+- [x] 遵循最佳实践
+- [x] 高度可定制
+- [x] 动态生成博客文章的 OG 图片
 
-- [x] type-safe markdown
-- [x] super fast performance
-- [x] accessible (Keyboard/VoiceOver)
-- [x] responsive (mobile ~ desktops)
-- [x] SEO-friendly
-- [x] light & dark mode
-- [x] fuzzy search
-- [x] draft posts & pagination
-- [x] sitemap & rss feed
-- [x] followed best practices
-- [x] highly customizable
-- [x] dynamic OG image generation for blog posts [#15](https://github.com/satnaing/astro-paper/pull/15) ([Blog Post](https://astro-paper.pages.dev/posts/dynamic-og-image-generation-in-astropaper-blog-posts/))
+## 📁 工程结构
 
-_Note: I've tested screen-reader accessibility of AstroPaper using **VoiceOver** on Mac and **TalkBack** on Android. I couldn't test all other screen-readers out there. However, accessibility enhancements in AstroPaper should be working fine on others as well._
-
-## ✅ Lighthouse Score
-
-<p align="center">
-  <a href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fastro-paper.pages.dev%2F&form_factor=desktop">
-    <img width="710" alt="AstroPaper Lighthouse Score" src="AstroPaper-lighthouse-score.svg">
-  </a>
-</p>
-
-## 🚀 Project Structure
-
-Inside of AstroPaper, you'll see the following folders and files:
+项目的主要目录结构如下：
 
 ```bash
 /
-├── public/
-│   ├── pagefind/ # auto-generated when build
-│   ├── favicon.svg
-│   └── astropaper-og.jpg
-├── src/
-│   ├── assets/
-│   │   ├── icons/
-│   │   └── images/
-│   ├── components/
-│   ├── data/
-│   │   └── blog/
-│   │       └── some-blog-posts.md
-│   ├── layouts/
-│   ├── pages/
-│   ├── scripts/
-│   ├── styles/
-│   ├── utils/
-│   ├── config.ts
-│   ├── constants.ts
-│   ├── content.config.ts
-│   ├── env.d.ts
-│   └── remark-collapse.d.ts
-└── astro.config.ts
+├── public/             # 静态资源目录
+│   ├── images/         # 图片资源
+│   ├── astropaper-og.jpg
+│   ├── favicon.png
+│   └── favicon.svg
+├── src/                # 源代码目录
+│   ├── assets/         # 资源文件
+│   │   ├── icons/      # 图标
+│   │   └── images/     # 图片
+│   ├── components/     # 组件
+│   ├── data/           # 数据目录
+│   │   ├── blog/       # 博客文章
+│   │   ├── astro-introduce/ # AstroPaper 主题相关文档
+│   │   └── buddhist-calendar/ # 佛教日历
+│   ├── layouts/        # 布局组件
+│   ├── pages/          # 页面
+│   ├── scripts/        # 脚本
+│   ├── styles/         # 样式
+│   ├── utils/          # 工具函数
+│   ├── config.ts       # 配置文件
+│   ├── constants.ts    # 常量
+│   ├── content.config.ts # 内容配置
+│   └── env.d.ts        # 环境类型定义
+├── astro.config.ts     # Astro 配置
+├── package.json        # 项目依赖
+└── tsconfig.json       # TypeScript 配置
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## 📝 新增博客文章指南
 
-Any static assets, like images, can be placed in the `public/` directory.
+### 1. 创建 Markdown 文件
 
-All blog posts are stored in `src/data/blog` directory.
+在 `src/data/blog/` 目录下创建一个新的 Markdown 文件，文件名建议使用小写字母和连字符，例如 `my-new-post.md`。
 
-## 📖 Documentation
+### 2. 编写 Frontmatter
 
-Documentation can be read in two formats\_ _markdown_ & _blog post_.
+在文件顶部添加 YAML 格式的 frontmatter，至少包含以下字段：
 
-- Configuration - [markdown](src/data/astro-introduce/how-to-configure-astropaper-theme.md) | [blog post](https://astro-paper.pages.dev/posts/how-to-configure-astropaper-theme/)
-- Add Posts - [markdown](src/data/astro-introduce/adding-new-post.md) | [blog post](https://astro-paper.pages.dev/posts/adding-new-posts-in-astropaper-theme/)
-- Customize Color Schemes - [markdown](src/data/astro-introduce/customizing-astropaper-theme-color-schemes.md) | [blog post](https://astro-paper.pages.dev/posts/customizing-astropaper-theme-color-schemes/)
-- Predefined Color Schemes - [markdown](src/data/astro-introduce/predefined-color-schemes.md) | [blog post](https://astro-paper.pages.dev/posts/predefined-color-schemes/)
+```yaml
+---
+title: 文章标题
+author: 作者名
+pubDatetime: 2026-04-01T00:00:00Z
+featured: false
+draft: false
+tags:
+  - 标签1
+  - 标签2
+description: 文章描述
+---
+```
 
-## 💻 Tech Stack
+**必填字段**：
+- `title`：文章标题
+- `description`：文章描述（用于 SEO 和摘要）
+- `pubDatetime`：发布时间（ISO 8601 格式）
 
-**Main Framework** - [Astro](https://astro.build/)  
-**Type Checking** - [TypeScript](https://www.typescriptlang.org/)  
-**Styling** - [TailwindCSS](https://tailwindcss.com/)  
-**UI/UX** - [Figma Design File](https://www.figma.com/community/file/1356898632249991861)  
-**Static Search** - [FuseJS](https://pagefind.app/)  
-**Icons** - [Tablers](https://tabler-icons.io/)  
-**Code Formatting** - [Prettier](https://prettier.io/)  
-**Deployment** - [Cloudflare Pages](https://pages.cloudflare.com/)  
-**Illustration in About Page** - [https://freesvgillustration.com](https://freesvgillustration.com/)  
-**Linting** - [ESLint](https://eslint.org)
+**可选字段**：
+- `author`：作者名（默认使用站点配置）
+- `slug`：自定义 slug（默认使用文件名）
+- `featured`：是否在首页特色区域显示（默认 false）
+- `draft`：是否为草稿（默认 false）
+- `tags`：文章标签（默认使用 "others"）
+- `ogImage`：OG 图片（默认自动生成）
+- `canonicalURL`：规范 URL
+- `hideEditPost`：是否隐藏编辑按钮
+- `timezone`：时区设置
 
-## 👨🏻‍💻 Running Locally
+### 3. 添加文章内容
 
-You can start using this project locally by running the following command in your desired directory:
+在 frontmatter 下方添加 Markdown 格式的文章内容。
+
+**注意事项**：
+- 文章标题使用 frontmatter 中的 `title`，正文应使用 h2 及以下标题
+- 可以使用 `## Table of contents` 添加目录
+- 支持语法高亮
+- 图片可以存储在 `src/assets/` 目录（推荐，会自动优化）或 `public` 目录（需自行优化）
+
+### 4. 组织文章（可选）
+
+- 可以在 `src/data/blog/` 下创建子目录组织文章，例如 `src/data/blog/2026/`
+- 子目录名会成为 URL 的一部分，例如 `src/data/blog/2026/my-post.md` 会生成 URL `/posts/2026/my-post`
+- 如果不希望子目录影响 URL，可以在目录名前加下划线，例如 `src/data/blog/_2026/my-post.md` 会生成 URL `/posts/my-post`
+
+### 5. 预览和构建
+
+- 本地预览：运行 `pnpm dev` 启动开发服务器
+- 构建：运行 `pnpm build` 构建生产版本
+
+## 📄 示例文章结构
+
+```markdown
+---
+title: 我的新博客文章
+author: 慧灯禅语
+pubDatetime: 2026-04-01T00:00:00Z
+featured: false
+draft: false
+tags:
+  - 佛学
+  - 修行
+description: 这是一篇关于佛学修行的新文章。
+---
+
+## 引言
+
+这里是文章的引言部分。
+
+## 主要内容
+
+这里是文章的主要内容。
+
+## 结论
+
+这里是文章的结论部分。
+```
+
+## 💻 技术栈
+
+**主框架** - [Astro](https://astro.build/)
+**类型检查** - [TypeScript](https://www.typescriptlang.org/)
+**样式** - [TailwindCSS](https://tailwindcss.com/)
+**UI/UX** - [Figma Design File](https://www.figma.com/community/file/1356898632249991861)
+**静态搜索** - [FuseJS](https://pagefind.app/)
+**图标** - [Tablers](https://tabler-icons.io/)
+**代码格式化** - [Prettier](https://prettier.io/)
+**部署** - [Cloudflare Pages](https://pages.cloudflare.com/)
+**代码检查** - [ESLint](https://eslint.org)
+
+## 👨🏻‍💻 本地运行
+
+在您的目标目录中运行以下命令来开始使用这个项目：
 
 ```bash
 # pnpm
@@ -113,68 +175,49 @@ yarn create astro --template satnaing/astro-paper
 bun create astro@latest -- --template satnaing/astro-paper
 ```
 
-Then start the project by running the following commands:
+然后通过运行以下命令启动项目：
 
 ```bash
-# install dependencies if you haven't done so in the previous step.
+# 安装依赖（如果之前步骤没有安装）
 pnpm install
 
-# start running the project
+# 启动项目
 pnpm run dev
 ```
 
-As an alternative approach, if you have Docker installed, you can use Docker to run this project locally. Here's how:
+作为替代方法，如果您安装了 Docker，可以使用 Docker 在本地运行此项目：
 
 ```bash
-# Build the Docker image
+# 构建 Docker 镜像
 docker build -t astropaper .
 
-# Run the Docker container
+# 运行 Docker 容器
 docker run -p 4321:80 astropaper
 ```
 
-## Google Site Verification (optional)
+## 🧞 命令
 
-You can easily add your [Google Site Verification HTML tag](https://support.google.com/webmasters/answer/9008080#meta_tag_verification&zippy=%2Chtml-tag) in AstroPaper using an environment variable. This step is optional. If you don't add the following environment variable, the google-site-verification tag won't appear in the HTML `<head>` section.
+所有命令都从项目根目录的终端运行：
 
-```bash
-# in your environment variable file (.env)
-PUBLIC_GOOGLE_SITE_VERIFICATION=your-google-site-verification-value
-```
+| 命令                              | 操作                                                                                                                           |
+| :-------------------------------- | :------------------------------------------------------------------------------------------------------------------------------- |
+| `pnpm install`                    | 安装依赖                                                                                                                        |
+| `pnpm run dev`                    | 在 `localhost:4321` 启动本地开发服务器                                                                                          |
+| `pnpm run build`                  | 构建生产站点到 `./dist/`                                                                                                        |
+| `pnpm run preview`                | 在部署前本地预览构建结果                                                                                                         |
+| `pnpm run format:check`           | 使用 Prettier 检查代码格式                                                                                                      |
+| `pnpm run format`                 | 使用 Prettier 格式化代码                                                                                                         |
+| `pnpm run sync`                   | 为所有 Astro 模块生成 TypeScript 类型。[了解更多](https://docs.astro.build/en/reference/cli-reference/#astro-sync)。             |
+| `pnpm run lint`                   | 使用 ESLint 进行代码检查                                                                                                         |
+| `docker compose up -d`            | 在 docker 上运行 AstroPaper，您可以使用与 `dev` 命令相同的主机名和端口访问。                                                    |
+| `docker compose run app npm install` | 您可以在 docker 容器中运行上述任何命令。                                                                                         |
+| `docker build -t astropaper .`    | 为 AstroPaper 构建 Docker 镜像。                                                                                                |
+| `docker run -p 4321:80 astropaper` | 在 Docker 上运行 AstroPaper。网站将可在 `http://localhost:4321` 访问。                                                            |
 
-> See [this discussion](https://github.com/satnaing/astro-paper/discussions/334#discussioncomment-10139247) for adding AstroPaper to the Google Search Console.
+## 📜 许可证
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-> **_Note!_** For `Docker` commands we must have it [installed](https://docs.docker.com/engine/install/) in your machine.
-
-| Command                              | Action                                                                                                                           |
-| :----------------------------------- | :------------------------------------------------------------------------------------------------------------------------------- |
-| `pnpm install`                       | Installs dependencies                                                                                                            |
-| `pnpm run dev`                       | Starts local dev server at `localhost:4321`                                                                                      |
-| `pnpm run build`                     | Build your production site to `./dist/`                                                                                          |
-| `pnpm run preview`                   | Preview your build locally, before deploying                                                                                     |
-| `pnpm run format:check`              | Check code format with Prettier                                                                                                  |
-| `pnpm run format`                    | Format codes with Prettier                                                                                                       |
-| `pnpm run sync`                      | Generates TypeScript types for all Astro modules. [Learn more](https://docs.astro.build/en/reference/cli-reference/#astro-sync). |
-| `pnpm run lint`                      | Lint with ESLint                                                                                                                 |
-| `docker compose up -d`               | Run AstroPaper on docker, You can access with the same hostname and port informed on `dev` command.                              |
-| `docker compose run app npm install` | You can run any command above into the docker container.                                                                         |
-| `docker build -t astropaper .`       | Build Docker image for AstroPaper.                                                                                               |
-| `docker run -p 4321:80 astropaper`   | Run AstroPaper on Docker. The website will be accessible at `http://localhost:4321`.                                             |
-
-> **_Warning!_** Windows PowerShell users may need to install the [concurrently package](https://www.npmjs.com/package/concurrently) if they want to [run diagnostics](https://docs.astro.build/en/reference/cli-reference/#astro-check) during development (`astro check --watch & astro dev`). For more info, see [this issue](https://github.com/satnaing/astro-paper/issues/113).
-
-## ✨ Feedback & Suggestions
-
-If you have any suggestions/feedback, you can contact me via [my email](mailto:contact@satnaing.dev). Alternatively, feel free to open an issue if you find bugs or want to request new features.
-
-## 📜 License
-
-Licensed under the MIT License, Copyright © 2025
+根据 MIT 许可证授权，版权 © 2025
 
 ---
 
-Made with 🤍 by [Sat Naing](https://satnaing.dev) 👨🏻‍💻 and [contributors](https://github.com/satnaing/astro-paper/graphs/contributors).
+由 [慧灯禅语](/) 制作 🤍
