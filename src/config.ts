@@ -1,25 +1,25 @@
 export const SITE = {
-  website: "https://astro-paper.pages.dev/", // replace this with your deployed domain
-  author: "Sat Naing",
-  profile: "https://satnaing.dev/",
-  desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
+  website: "https://huidengchan.com/", // replace this with your deployed domain
+  author: "慧灯禅语",
+  profile: "https://huidengchan.com/",
+  desc: "分享佛学智慧，探索内心宁静",
   title: "慧灯禅语",
-  ogImage: "astropaper-og.jpg",
+  ogImage: "favicon.png",
   lightAndDarkMode: true,
-  postPerIndex: 4,
-  postPerPage: 4,
+  postPerIndex: 6,
+  postPerPage: 6,
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
   showArchives: true,
   showBackButton: true, // show back button in post detail
   editPost: {
     enabled: false,
-    text: "Edit page",
-    url: "https://github.com/satnaing/astro-paper/edit/main/",
+    text: "编辑页面",
+    url: "https://github.com/notrim/astor-paper-blog/edit/main/",
   },
   dynamicOgImage: true,
   dir: "ltr", // "rtl" | "auto"
-  lang: "en", // html lang code. Set this empty and default will be "en"
-  timezone: "Asia/Bangkok", // Default global timezone (IANA format) https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  lang: "zh-CN", // html lang code. Set this empty and default will be "en"
+  timezone: "Asia/Shanghai", // Default global timezone (IANA format) https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 } as const;
 
 export type NavLink = {
