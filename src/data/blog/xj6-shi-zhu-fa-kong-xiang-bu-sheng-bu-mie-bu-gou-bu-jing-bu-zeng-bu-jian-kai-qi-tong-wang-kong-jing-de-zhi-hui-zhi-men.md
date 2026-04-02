@@ -6,7 +6,8 @@ featured: false
 draft: false
 tags:
   - 心经解读
-description: 解读《心经》中“是诸法空相，不生不灭，不垢不净，不增不减”的深刻含义，探索空性智慧的真正内涵。
+description: 解读《心经》中"是诸法空相，不生不灭，不垢不净，不增不减"的深刻含义，探索空性智慧的真正内涵。
+seriesOrder: 6
 ---
 
 ## 《心经》概要
