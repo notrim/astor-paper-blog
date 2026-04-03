@@ -72,10 +72,10 @@ seriesOrder: 6
 
 ## 往期系列
 
-- 《心经》解读，当你真正“观自在”——开启通往空境的智慧之门
-- 《心经》解读 照见五蕴皆空——真正的解脱，从“看见”开始
-- 《心经》解读 ，色即是空，空即是色——唯物主义之外，你还可以拥有一双“空性之眼”
-- 《心经》解读，受想行识，亦复如是——再谈佛说五蕴皆空
+- [《心经》解读，当你真正“观自在”——开启通往空境的智慧之门](/blog/xj2-guan-zi-zai-pu-sa-xing-shen-ban-ruo-bo-luo-mi-duo-shi)
+- [《心经》解读 照见五蕴皆空——真正的解脱，从“看见”开始](/blog/xj3-zhao-jian-wu-yun-jie-kong-zhen-zheng-de-jie-tuo-cong-kan-jian-kai-shi)
+- [《心经》解读 ，色即是空，空即是色——唯物主义之外，你还可以拥有一双“空性之眼”](/blog/xj4-se-ji-shi-kong-kong-ji-shi-se-wei-wu-zhu-yi-zhi-wai-ni-hai-ke-yi-yong-you-yi-shuang-kong-xing-zhi-yan)
+- [《心经》解读，受想行识，亦复如是——再谈佛说五蕴皆空](/blog/xj5-shou-xiang-xing-shi-yi-fu-ru-shi-zai-tan-fo-shuo-wu-yun-jie-kong)
 
 ## 王菲佛经音频推荐
 
