@@ -82,15 +82,15 @@ seriesOrder: 11
 
 ## 往期系列
 
-- [《心经》解读，当你真正“观自在”——开启通往空境的智慧之门](/blog/xj2-guan-zi-zai-pu-sa-xing-shen-ban-ruo-bo-luo-mi-duo-shi)
-- [《心经》解读 照见五蕴皆空——真正的解脱，从“看见”开始](/blog/xj3-zhao-jian-wu-yun-jie-kong-zhen-zheng-de-jie-tuo-cong-kan-jian-kai-shi)
-- [《心经》解读 ，色即是空，空即是色——唯物主义之外，你还可以拥有一双“空性之眼”](/blog/xj4-se-ji-shi-kong-kong-ji-shi-se-wei-wu-zhu-yi-zhi-wai-ni-hai-ke-yi-yong-you-yi-shuang-kong-xing-zhi-yan)
-- [《心经》解读，受想行识，亦复如是——再谈佛说五蕴皆空](/blog/xj5-shou-xiang-xing-shi-yi-fu-ru-shi-zai-tan-fo-shuo-wu-yun-jie-kong)
-- [《心经》解读，是诸法空相，不生不灭，不垢不净，不增不减——开启通往空境的智慧之门](/blog/xj6-shi-zhu-fa-kong-xiang-bu-sheng-bu-mie-bu-gou-bu-jing-bu-zeng-bu-jian-kai-qi-tong-wang-kong-jing-de-zhi-hui-zhi-men)
-- [《心经》解读——再谈诸法空相，放下了我执后，我该随缘而安，从此不再奔忙？](/blog/xj7-zai-tan-zhu-fa-kong-xiang-fang-xia-le-wo-zhi-hou-wo-gai-sui-yuan-er-an-cong-ci-bu-zai-ben-mang)
-- [《心经》解读 再谈诸法空相——在空性中生起慈悲心，悲心中不执'有我'去行动。](/blog/xj8-zai-tan-zhu-fa-kong-xiang-zai-kong-xing-zhong-sheng-qi-ci-bei-xin-bei-xin-zhong-bu-zhi-you-wo-qu-xing-dong)
-- [《心经》解读，是故空中无色——在教会我们什么](/blog/xj9-shi-gu-kong-zhong-wu-se-zai-jiao-hui-wo-men-shen-me)
-- [《心经》解读｜ 无无明，亦无无明尽，乃至无老死，亦无老死尽——在教会我们什么](/blog/xj10-wu-wu-ming-yi-wu-wu-ming-jin-nai-zhi-wu-lao-si-yi-wu-lao-si-jin-zai-jiao-hui-wo-men-shen-me)
+- [《心经》解读，当你真正“观自在”——开启通往空境的智慧之门](/posts/xj2-guan-zi-zai-pu-sa-xing-shen-ban-ruo-bo-luo-mi-duo-shi)
+- [《心经》解读 照见五蕴皆空——真正的解脱，从“看见”开始](/posts/xj3-zhao-jian-wu-yun-jie-kong-zhen-zheng-de-jie-tuo-cong-kan-jian-kai-shi)
+- [《心经》解读 ，色即是空，空即是色——唯物主义之外，你还可以拥有一双“空性之眼”](/posts/xj4-se-ji-shi-kong-kong-ji-shi-se-wei-wu-zhu-yi-zhi-wai-ni-hai-ke-yi-yong-you-yi-shuang-kong-xing-zhi-yan)
+- [《心经》解读，受想行识，亦复如是——再谈佛说五蕴皆空](/posts/xj5-shou-xiang-xing-shi-yi-fu-ru-shi-zai-tan-fo-shuo-wu-yun-jie-kong)
+- [《心经》解读，是诸法空相，不生不灭，不垢不净，不增不减——开启通往空境的智慧之门](/posts/xj6-shi-zhu-fa-kong-xiang-bu-sheng-bu-mie-bu-gou-bu-jing-bu-zeng-bu-jian-kai-qi-tong-wang-kong-jing-de-zhi-hui-zhi-men)
+- [《心经》解读——再谈诸法空相，放下了我执后，我该随缘而安，从此不再奔忙？](/posts/xj7-zai-tan-zhu-fa-kong-xiang-fang-xia-le-wo-zhi-hou-wo-gai-sui-yuan-er-an-cong-ci-bu-zai-ben-mang)
+- [《心经》解读 再谈诸法空相——在空性中生起慈悲心，悲心中不执'有我'去行动。](/posts/xj8-zai-tan-zhu-fa-kong-xiang-zai-kong-xing-zhong-sheng-qi-ci-bei-xin-bei-xin-zhong-bu-zhi-you-wo-qu-xing-dong)
+- [《心经》解读，是故空中无色——在教会我们什么](/posts/xj9-shi-gu-kong-zhong-wu-se-zai-jiao-hui-wo-men-shen-me)
+- [《心经》解读｜ 无无明，亦无无明尽，乃至无老死，亦无老死尽——在教会我们什么](/posts/xj10-wu-wu-ming-yi-wu-wu-ming-jin-nai-zhi-wu-lao-si-yi-wu-lao-si-jin-zai-jiao-hui-wo-men-shen-me)
 
 ## 王菲佛经音频推荐
 
