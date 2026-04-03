@@ -7,7 +7,7 @@ draft: false
 tags:
   - 佛教经文音频
 description: 金刚经《金刚般若波罗蜜经》音频资源整理
-audio: /audio/jin-gang-jing-wang-fei.mp3
+audio: /audio/jin-gang-jing.mp3
 ---
 
 ## 经文简介
