@@ -1,10 +1,10 @@
 ---
 title: 什么是“默照禅”？——曹山宝积寺中体悟禅宗中的沉静之道
-pubDatetime: 2026-02-27T00:00:00Z
+pubDatetime: 2026-04-03T00:00:00Z
 featured: true
 draft: false
 tags:
-  - 禅修笔记
+  - 佛学随笔
 description: 介绍曹洞宗“默照禅”的核心要义、与看话禅的差异、实修要点与当代意义。
 ---
 
