@@ -5,7 +5,7 @@ pubDatetime: 2026-03-04T00:00:00Z
 featured: true
 draft: false
 tags:
-  - 佛学随笔
+  - 禅修笔记
 description: 《大悲咒》简介与咒文节选：在日常持诵中安神、增福、回归清净。
 audio: /audio/dabeizou.mp3
 ---

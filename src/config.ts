@@ -36,7 +36,7 @@ export type NavLink = {
 export const NAV_LINKS: NavLink[] = [
   { title: "心经解读", href: "/tags/心经解读" },
   { title: "佛教经文音频", href: "/tags/佛教经文音频" },
-  { title: "佛学随笔", href: "/tags/佛学随笔" },
+  { title: "禅修笔记", href: "/tags/禅修笔记" },
   { title: "情绪词典", href: "/tags/情绪词典" },
   { title: "佛历", href: "/foli" },
 ];

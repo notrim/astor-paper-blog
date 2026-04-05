@@ -4,7 +4,7 @@ pubDatetime: 2026-04-03T00:00:00Z
 featured: true
 draft: false
 tags:
-  - 佛学随笔
+  - 禅修笔记
 description: 介绍曹洞宗“默照禅”的核心要义、与看话禅的差异、实修要点与当代意义。
 ---
 

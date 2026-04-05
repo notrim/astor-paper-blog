@@ -4,7 +4,7 @@ pubDatetime: 2026-02-26T00:00:00Z
 featured: true
 draft: false
 tags:
-  - 佛学随笔
+  - 禅修笔记
 description: 从王维的诗画与人生起落，读出禅意与清净心：尘世亦可留一片净土。
 ---
 
